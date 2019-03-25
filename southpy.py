@@ -38,7 +38,7 @@ elif len(sys.argv) == 2:
 
 else:
     #Capítulo al azar
-    temp = random.randint(1,22)
+    temp = random.randint(0,22)
     cap = capxtemp(temp)
     
 print('Va')
@@ -50,6 +50,7 @@ soup = bs4.BeautifulSoup(res.text)
 
 # Abrir una pestaña del navegador para cada resultado.
 linkElms = soup.select('.r a')
+#numOpen = min(5, len(linkElms))
 
 webbrowser.open('http://google.com' + linkElms[0].get('href'))
 print('Al carajo, yo me voy')
