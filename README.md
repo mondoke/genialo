@@ -1,4 +1,7 @@
 # genialo
+----------------------------------------------------------------------------------------
+Dependencies: requests, beautifulsoup4
+---------------------------------------------------------------------------------------
 Ver un capítulo de South Park al azar.
 
 Si se ejecuta sin kwargs, elige un capítulo al azar.
