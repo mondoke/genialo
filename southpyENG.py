@@ -5,8 +5,8 @@ import requests, sys, webbrowser, bs4, random
 #Selects a server. If you want to watch from a different site, change the next line. The default is a page with latin american south park dub.
 site = 'totalsouthpark.blogspot.com'
 def capxtemp(temp):
-    listcaps = [0,13,18,17,17,14,17,15,14,14,14,14,14,14,14,14,10,10,10,10,10,10] #Caps por temporada
-    nro= random.randint(1,listcaps[temp])#Caps per temp
+    listcaps = [0,13,18,17,17,14,17,15,14,14,14,14,14,14,14,14,10,10,10,10,10,10] #Caps per season
+    nro= random.randint(1,listcaps[temp])
     temp = str(temp)
     if len(temp) ==1:
         temp = '0'+temp
